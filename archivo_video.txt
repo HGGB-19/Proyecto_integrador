@@ -1,0 +1,36 @@
+Pelicula Thor Ficcion 7 2020 120
+Pelicula ironman Ficcion 7 2020 120
+Pelicula capitanAmerica Ficcion 7 2020 120
+
+codigo de archivo
+
+
+fstream archivo_video;
+
+
+Video info_videos[1000];
+
+    int cantidadVideos = 0;
+    archivo_video.open("archivo_video.txt");
+
+    if (archivo_video.is_open())
+    {
+    
+        while (archivo_video >> tipo >> nombre >> genero >> calificacion >> anio >> duracion)
+        {
+            info_videos[cantidadVideos].setTipo(tipo);
+            info_videos[cantidadVideos].setNombre(nombre);
+            info_videos[cantidadVideos].setGenero(genero);
+            info_videos[cantidadVideos].setCalificacion(calificacion);
+            info_videos[cantidadVideos].setAnio(anio);
+            info_videos[cantidadVideos].setDuracion(duracion);
+            cantidadVideos++;      
+        }
+        archivo_video.close();
+        cout << endl;
+    }
+    else
+    {
+        cout << "error al abrir el archivo" << endl;
+    }
+
