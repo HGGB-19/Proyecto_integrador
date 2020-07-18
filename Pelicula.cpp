@@ -2,6 +2,11 @@
 
 using namespace std;
 
+Pelicula :: Pelicula(string tipo, string nombre, string genero, int calificacion, int anio, int duracion) : Video(tipo, nombre, genero, calificacion, anio, duracion)
+{
+
+}
+
 void Pelicula :: muestraDatos()
 {
     cout << "Tipo de video =  " << tipo << endl;
