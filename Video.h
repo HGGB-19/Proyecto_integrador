@@ -4,7 +4,8 @@
 #include <iostream>
 using namespace std;     
 
-class Video{
+class Video
+{
     protected:
         string tipo;
         string nombre;

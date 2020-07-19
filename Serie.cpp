@@ -6,10 +6,17 @@ Serie :: Serie() : Video()
 {
 
 }
-
-Serie :: Serie(string tipo, string nombre, string genero, int anio, int duracion) : Video(tipo, nombre, genero, anio, duracion)
+Serie :: Serie(int id_serie, string tipo, string nombre, string genero, int anio, int duracion) : Video(tipo, nombre, genero, anio, duracion)
 {
-
+    this -> id_serie = id_serie;
+}
+void Serie :: setIdSerie(int id_serie)
+{
+    this -> id_serie = id_serie;
+}
+int Serie :: getIdSerie()
+{
+    return id_serie;
 }
 
 void Serie :: muestraDatos()

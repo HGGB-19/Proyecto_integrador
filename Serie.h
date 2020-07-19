@@ -6,11 +6,14 @@
 
 class Serie : public Video
 {
+    protected:
+        int id_serie;
     public:
         Serie();
-        Serie(string tipo, string nombre, string genero, int anio, int duracion);
+        Serie(int ,string , string, string, int, int);
+        void setIdSerie(int);
+        int getIdSerie();
         void muestraDatos();
-    
 };
 
 #endif
