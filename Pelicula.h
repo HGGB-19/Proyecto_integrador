@@ -10,6 +10,7 @@ class Pelicula : public Video
         Pelicula(string, string, string, int, int, int);
         void muestraDatos();
         int calificaPelicula();
+        void verPelicula();
     
 };
 

@@ -14,6 +14,7 @@ class Serie : public Video
         void setIdSerie(int);
         int getIdSerie();
         void muestraDatos();
+        void  verSerie();
 };
 
 #endif

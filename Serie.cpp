@@ -28,3 +28,7 @@ void Serie :: muestraDatos()
     cout << "Duracion =  " << duracion << endl;
 
 }
+void Serie :: verSerie()
+{
+    cout << nombre << endl;
+}

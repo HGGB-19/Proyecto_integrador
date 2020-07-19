@@ -24,3 +24,8 @@ int Pelicula :: calificaPelicula()
     cin >> calificacion;
 
 }
+
+void Pelicula :: verPelicula()
+{
+    cout << nombre << endl;
+}
