@@ -9,6 +9,7 @@ class Pelicula : public Video
     public:
         Pelicula(string, string, string, int, int, int);
         void muestraDatos();
+        int calificaPelicula();
     
 };
 

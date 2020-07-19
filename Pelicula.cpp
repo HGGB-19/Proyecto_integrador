@@ -17,3 +17,10 @@ void Pelicula :: muestraDatos()
     cout << "Duracion =  " << duracion << endl;
 
 }
+
+int Pelicula :: calificaPelicula()
+{
+    cout << "Califica la pelicula: " ;
+    cin >> calificacion;
+
+}

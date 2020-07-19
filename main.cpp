@@ -14,6 +14,9 @@ int main()
 
     pelicula_1.muestraDatos();
     serie_1.muestraDatos();
+
+    pelicula_1.calificaPelicula();
+    pelicula_1.muestraDatos();
     
     return 0;
 
