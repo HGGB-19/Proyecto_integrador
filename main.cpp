@@ -16,13 +16,6 @@ int main()
     pelicula_1.muestraDatos();
     serie_1.muestraDatos();
     capitulo_1.muestraDatos();
-
-
-
-
-
-
-
     
     return 0;
 }
