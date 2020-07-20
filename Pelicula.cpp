@@ -22,10 +22,9 @@ int Pelicula :: calificaPelicula()
 {
     cout << "Califica la pelicula: " ;
     cin >> calificacion;
-
 }
 
 void Pelicula :: verPelicula()
 {
-    cout << nombre << endl;
+    cout << "+ " << nombre << endl;
 }

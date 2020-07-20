@@ -12,9 +12,9 @@ void ver_serie()
 {
     Serie* contenido[3];
 
-    contenido[0] = new Serie(1234, "Serie", " HIMYM","Comedia", 2020, 120);
-    contenido[1] = new Serie(1234, "Serie", " Friends","Comedia", 2020, 120);
-    contenido[2] = new Serie(1234, "Serie", " BNX","Anime", 2020, 120);
+    contenido[0] = new Serie(1234, "Serie", "HIMYM","Comedia", 2020, 120);
+    contenido[1] = new Serie(1234, "Serie", "Friends","Comedia", 2020, 120);
+    contenido[2] = new Serie(1234, "Serie", "BNX","Anime", 2020, 120);
 
     for (int i = 0; i < 3; i++)
     {
@@ -22,7 +22,7 @@ void ver_serie()
     }
 
 }
-void ver_pelicula()
+void ver_pelicula()//Esta funcion me ayuda a crear un arrglo de clase peliculas
 {
     Pelicula* contenido[3];
 
@@ -35,20 +35,26 @@ void ver_pelicula()
         contenido[i] -> verPelicula();
     }
 }
-void  crear_objetos()
+void opcion_1()//Esta funcion me ayuda a crear la primera opcion del menu 
 {
-    Video* contenido[3];
+    char opcion;
 
-    contenido[0] = new Pelicula ("Pelicula", "thor", "ficcion", 7, 2020, 120);
-    contenido[1] = new Serie (1234, "serie", "HIMYM", "Comedia", 2020, 120);
-    contenido[2] = new Capitulo (1234,"prologo", 1, 1);
-
-    for (int i = 0; i < 3; i++)
+    cout << "¿ Que te gustaria ver ?" << endl;
+    cout << "-----------------------\n" << endl;
+    cout << "A) Peliculas" << endl;
+    cout << "B) Series" << endl;
+    cout << "Ingrese su opcion: " << endl;
+    cin >> opcion;
+    if (opcion == 'A')
     {
-        contenido[i] -> muestraDatos();
+        cout << "---Aqui esta la lista de peliculas---" << endl;
+        ver_pelicula();
+    }
+    else
+    {
+        ver_serie();
     }
 }
-
 
 
 int main()
@@ -74,8 +80,7 @@ int main()
         {
         case 'A':
             {
-                ver_pelicula();
-                ver_serie();
+                opcion_1();
             break;
             }
         }
