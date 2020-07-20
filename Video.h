@@ -17,7 +17,7 @@ class Video
     public:
         Video();
         Video(string, string, string, int, int, int);
-        Video(string, string, string, int, int);
+        Video(string, string, string, int);
         void calificaVideo(int);
         virtual void muestraDatos();
         void setTipo(string);

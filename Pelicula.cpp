@@ -26,5 +26,5 @@ int Pelicula :: calificaPelicula()
 
 void Pelicula :: verPelicula()
 {
-    cout << "+ " << nombre << endl;
+    cout << " [+] " << nombre << " ---- "<< genero << " ---- " << calificacion << endl;
 }

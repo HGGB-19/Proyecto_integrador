@@ -65,13 +65,12 @@ Video :: Video(string tipo, string nombre, string genero, int calificacion, int 
 
 }
 //constructor_2
-Video :: Video(string tipo, string nombre, string genero, int anio, int duracion)
+Video :: Video(string tipo, string nombre, string genero, int anio)
 {
     this -> tipo = tipo;
     this -> nombre = nombre;
     this -> genero = genero;
     this -> anio = anio;
-    this -> duracion = duracion;
 }
 void Video :: calificaVideo(int calificacion_1)
 {

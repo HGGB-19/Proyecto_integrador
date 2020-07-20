@@ -8,20 +8,6 @@
 using namespace std;
 
 
-void ver_serie()
-{
-    Serie* contenido[3];
-
-    contenido[0] = new Serie(1234, "Serie", "HIMYM","Comedia", 2020, 120);
-    contenido[1] = new Serie(1234, "Serie", "Friends","Comedia", 2020, 120);
-    contenido[2] = new Serie(1234, "Serie", "BNX","Anime", 2020, 120);
-
-    for (int i = 0; i < 3; i++)
-    {
-        contenido[i] -> verSerie();
-    }
-
-}
 void ver_pelicula()//Esta funcion me ayuda a crear un arrglo de clase peliculas
 {
     Pelicula* contenido[3];
@@ -35,6 +21,28 @@ void ver_pelicula()//Esta funcion me ayuda a crear un arrglo de clase peliculas
         contenido[i] -> verPelicula();
     }
 }
+void ver_serie()//Esta funcion me ayuda a crear objetos de tipo serie
+{
+    Serie* contenido[3];
+
+    contenido[0] = new Serie(1234, "Serie", "HIMYM","Comedia", 2020, 8);
+    contenido[1] = new Serie(1234, "Serie", "Friends","Comedia", 2020, 4);
+    contenido[2] = new Serie(1234, "Serie", "BNX","Anime", 2020, 1);
+
+    for (int i = 0; i < 3; i++)
+    {
+        contenido[i] -> verSerie();
+    }
+
+}
+void ver_capitulos()
+{
+    Capitulo* contenido[3];
+
+    contenido[0] = new Capitulo(1234,"Prologo", 1, 1);
+    contenido[1] = new Capitulo(1234,"TE AMO", 2, 1);
+    contenido[2] = new Capitulo(1234,"CONOCI A TU MADRE", 3, 1);
+}
 void opcion_1()//Esta funcion me ayuda a crear la primera opcion del menu 
 {
     char opcion;
@@ -43,15 +51,21 @@ void opcion_1()//Esta funcion me ayuda a crear la primera opcion del menu
     cout << "-----------------------\n" << endl;
     cout << "A) Peliculas" << endl;
     cout << "B) Series" << endl;
-    cout << "Ingrese su opcion: " << endl;
+    cout << "Ingrese su opcion: ";
     cin >> opcion;
     if (opcion == 'A')
     {
         cout << "---Aqui esta la lista de peliculas---" << endl;
+        cout << "----------------------------------" << endl;
+        cout << "Pelicula ---- Genero ---- Calificacion\n" << endl;
         ver_pelicula();
+        
     }
     else
     {
+        cout << "---Aqui esta la lista de Series---" << endl;
+        cout << "----------------------------------" << endl;
+        cout << "Serie ---- Temporada ---- Genero\n" << endl;
         ver_serie();
     }
 }
