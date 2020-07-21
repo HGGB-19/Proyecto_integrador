@@ -9,7 +9,7 @@ Pelicula :: Pelicula(string tipo, string nombre, string genero, int calificacion
 
 void Pelicula :: muestraDatos()
 {
-    cout << "Tipo de video =  " << tipo << endl;
+    cout << "\n\nTipo de video =  " << tipo << endl;
     cout << "Nombre de la pelicula =  " << nombre << endl;
     cout << "Genero de la pelicula =  " << genero << endl;
     cout << "Calificacion =  " << calificacion << endl;   
@@ -24,7 +24,7 @@ int Pelicula :: calificaPelicula()
     cin >> calificacion;
 }
 
-void Pelicula :: verPelicula()
+void Pelicula :: ver_contenido()
 {
     cout << " [+] " << nombre << " ---- "<< genero << " ---- " << calificacion << endl;
 }

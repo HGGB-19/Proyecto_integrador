@@ -9,9 +9,8 @@ class Pelicula : public Video
     public:
         Pelicula(string, string, string, int, int, int);
         void muestraDatos();
+        void ver_contenido();
         int calificaPelicula();
-        void verPelicula();
-    
 };
 
 #endif

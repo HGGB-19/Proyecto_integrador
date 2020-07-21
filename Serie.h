@@ -17,7 +17,8 @@ class Serie : public Video
         void setTemporada(int temporada){this -> temporada = temporada;}
         int getTemporada(){return temporada;}
         void muestraDatos();
-        void  verSerie();
+        void ver_contenido();
+        
 };
 
 #endif

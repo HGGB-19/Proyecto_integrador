@@ -29,7 +29,7 @@ void Serie :: muestraDatos()
     cout << "Temporadas =  " << temporada << endl;
 
 }
-void Serie :: verSerie() 
+void Serie :: ver_contenido() 
 {
     cout << " [+] " << nombre << " ---- " << temporada << " ---- " << genero << endl;
 }

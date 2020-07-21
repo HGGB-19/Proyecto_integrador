@@ -20,6 +20,7 @@ class Video
         Video(string, string, string, int);
         void calificaVideo(int);
         virtual void muestraDatos();
+        virtual void ver_contenido();
         void setTipo(string);
         string getTipo();
         void setNombre(string);

@@ -81,6 +81,10 @@ void Video :: muestraDatos()
 
 
 }
+void Video :: ver_contenido()
+{
+    
+}
 Video :: Video ()
 {
 
