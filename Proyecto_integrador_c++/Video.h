@@ -33,6 +33,7 @@ class Video
         int getAnio();
         void setDuracion(int);
         int getDuracion();
+        Video operator << (string nombre);//intenTo de SOBRECARGA DE OPERADOR
 };
 
 #endif

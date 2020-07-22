@@ -27,6 +27,7 @@ class Capitulo
         void setTemporada0(int temporada) {this -> temporada = temporada;}
         int getTemporada() {return temporada;}
         void muestraDatos();
+        
 };
 
 #endif

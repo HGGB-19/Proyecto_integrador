@@ -11,6 +11,7 @@ class Pelicula : public Video
         void muestraDatos();
         void ver_contenido();
         int calificaPelicula(int);
+        
 };
 
 #endif

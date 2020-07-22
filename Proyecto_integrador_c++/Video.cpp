@@ -89,4 +89,8 @@ Video :: Video ()
 {
 
 }
+Video Video :: operator << (string nombre)//intenTo de SOBRECARGA DE OPERADOR
+{
+    cout << " [+] " << tipo << " | " << nombre << " ---- "<< genero << " ---- " << calificacion << endl;
+}
 
