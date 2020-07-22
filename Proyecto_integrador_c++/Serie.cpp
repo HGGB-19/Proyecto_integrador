@@ -10,6 +10,8 @@ Serie :: Serie(int id_serie, string tipo, string nombre, string genero, int anio
 {
     this -> id_serie = id_serie;
     this -> temporada = temporada;
+
+
 }
 void Serie :: setIdSerie(int id_serie)
 {
@@ -32,4 +34,15 @@ void Serie :: muestraDatos()
 void Serie :: ver_contenido() 
 {
     cout << " [+] " << tipo << " | " << nombre << " ---- " << temporada << " ---- " << genero << endl;
+}
+void Serie :: ver_capitulos()
+{
+    for (unsigned int i = 0; i < contenido_capitulos.size(); i++ )
+    {
+        contenido_capitulos[i] -> muestraDatos();
+    }
+}
+void Serie :: crear_capitulo(int id_capitulo, string nombre,int numeroCapitulo, int temporada, int calificacionCapitulo)
+{
+    contenido_capitulos.push_back(new Capitulo(id_capitulo, nombre, numeroCapitulo, temporada, calificacionCapitulo));
 }

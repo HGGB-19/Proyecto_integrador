@@ -18,10 +18,11 @@ void Pelicula :: muestraDatos()
 
 }
 
-int Pelicula :: calificaPelicula()
+int Pelicula :: calificaPelicula(int calificacion_1)
 {
-    cout << "Califica la pelicula: " ;
-    cin >> calificacion;
+    cout << "califica pelicula: \n";
+    calificacion = calificacion_1;
+    ver_contenido();
 }
 
 void Pelicula :: ver_contenido()

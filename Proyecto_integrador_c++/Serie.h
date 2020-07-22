@@ -2,10 +2,14 @@
 #define Serie_h
 
 #include <iostream>
+#include <vector>
 #include "Video.h"
+#include "Capitulo.h"
 
 class Serie : public Video
 {
+    private:
+        vector <Capitulo*> contenido_capitulos;
     protected:
         int id_serie;
         int temporada;
@@ -17,8 +21,9 @@ class Serie : public Video
         void setTemporada(int temporada){this -> temporada = temporada;}
         int getTemporada(){return temporada;}
         void muestraDatos();
+        void ver_capitulos();
         void ver_contenido();
-        
+        void crear_capitulo(int, string, int, int, int);
 };
 
 #endif
